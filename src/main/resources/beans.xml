@@ -2,7 +2,20 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id = "humanBean" class="io.turntabl.springgettingstarted.HumanBean">
+    <property name="FName" value="Christiana"/>
+    <property name="LName" value="Asare" />
+    <property name="BeanFriend" ref="HumanBeanFriend"/>
 
+
+</bean>
+
+    <bean id = "HumanBeanFriend" class="io.turntabl.springgettingstarted.HumanBean">
+        <property name="FName" value="Dennis"/>
+        <property name="LName" value="Effa"/>
+
+
+    </bean>
 
 
 </beans>
